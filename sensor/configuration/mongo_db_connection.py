@@ -11,7 +11,7 @@ class MongoDBClient:
         try:
 
             if MongoDBClient.client is None:
-                mongo_db_url = "mongodb+srv://priyanka:priya123@cluster0.wbh31ji.mongodb.net/?retryWrites=true&w=majority"
+                mongo_db_url = "mongodb+srv://username:password@cluster0.wbh31ji.mongodb.net/?retryWrites=true&w=majority"
                 #mongo_db_url = os.getenv(MONGODB_URL_KEY)
                 print(mongo_db_url)
                 if "localhost" in mongo_db_url:
