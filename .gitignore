@@ -127,4 +127,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
-.env_variable.py
+
+#env_file
+env_variable.py
+mongo_db_connection.py
