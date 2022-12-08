@@ -30,7 +30,7 @@ class TrainPipeline:
             data_ingestion = DataIngestion(data_ingestion_config=self.data_ingestion_config)
             # and then finally we started the ingestion and then we get the output data_ingestion_artifact 
             data_ingestion_artifact = data_ingestion.initiate_data_ingestion()
-            logging.info(f"Data ingestion completed and artifact: {data_ingestion_artifact}")
+            loggging.info(f"Data ingestion completed and artifact: {data_ingestion_artifact}")
             return data_ingestion_artifact
         except Exception as e:
             raise SensorException(e,sys)
